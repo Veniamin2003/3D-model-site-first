@@ -29,7 +29,7 @@ export default function SplineComponent() {
                     The 3D model is provided along with the developed design documentation (CD).
                 </p>
                 <button>
-                    <img src={IconLaptop} alt="Download"/> Download for Mac
+                    <img src={IconLaptop} alt="Download"/> Download resume
                 </button>
             </Content>
             <Social>
