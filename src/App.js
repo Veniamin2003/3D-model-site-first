@@ -1,7 +1,7 @@
 import './App.css';
 import React from "react";
 import SplineComponent from "./components/Spline";
-import s from "./components/Spline.module.css"
+import s from "./components/Spline.css"
 
 class App extends React.Component {
     render() {

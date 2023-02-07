@@ -1,7 +1,6 @@
 import React from "react";
 import Spline from '@splinetool/react-spline';
-import s from "./Spline.module.css"
-import styled from "styled-components"
+import "./Spline.css"
 
 import Logo from "../images/logo.svg"
 import IconTwitter from "../images/twitter.svg"
@@ -10,17 +9,17 @@ import IconLaptop from "../images/laptop-new.svg"
 
 export default function SplineComponent() {
     return (
-        <Wrapper>
+        <div className="wrapper">
             <Spline className="spline" scene="https://prod.spline.design/b1EqHozIdRZXPWZV/scene.splinecode" />
-            <Content>
-                <Menu>
+            <div className="content">
+                <div className="menu">
                     <li><img src={Logo} alt="Logo"/></li>
                     <li><a href="/">Home</a></li>
                     <li><a href="/">Download</a></li>
                     <li><a href="/">App</a></li>
                     <li><a href="/">Login</a></li>
                     <li><button>Get Started</button></li>
-                </Menu>
+                </div>
                 <h1>Collaborate with people</h1>
                 <p>
                     Our company creates very high quality kitchen furniture for you.
@@ -31,17 +30,17 @@ export default function SplineComponent() {
                 <button>
                     <img src={IconLaptop} alt="Download"/> Download resume
                 </button>
-            </Content>
-            <Social>
+            </div>
+            <div className="social">
                 <div />
                 <img src={IconTwitter} alt="Twitter"/>
                 <img src={IconYouTube} alt="YouTube"/>
-            </Social>
-        </Wrapper>
+            </div>
+        </div>
     );
 }
 
-const Wrapper = styled.div`
+/*const Wrapper = styled.div`
   font-family: 'Spline Sans', sans-serif;
   font-size: 16px;
   color: black;
@@ -70,9 +69,9 @@ const Wrapper = styled.div`
       transform: scale(0.45) translateX(-50px);
     }
   }
-`;
+`;*/
 
-const Content = styled.div`
+/*const Content = styled.div`
   position: absolute;
   top: 30px;
   
@@ -149,9 +148,9 @@ const Content = styled.div`
       margin: 0 30px;
     }
   }
-`;
+`;*/
 
-const Menu = styled.ul`
+/*const Menu = styled.ul`
   display: flex;
   gap: 30px;// ширина ячеек
   align-items: center;
@@ -190,9 +189,9 @@ const Menu = styled.ul`
       display: none;
     }
   }
-`;
+`;*/
 
-const Social = styled.div`
+/*const Social = styled.div`
   position: absolute;
   top: 150px;
   left: 30px;
@@ -221,5 +220,5 @@ const Social = styled.div`
   @media (max-width: 1024px) {
     display: none;
   }
-`;
+`;*/
 
